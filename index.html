@@ -13,11 +13,20 @@
     </head>
     <body>
         <p id="FYouChrome"></p>
-        <h2>Xenon's redirect creator</h2>
+        <h2>xenon's redirect creator</h2>
         <p id="status">click the button to create a redirect URL!</p>
-        <input type="text" id="url" placeholder="enter url here"><button onclick="create()">✓</button>
+        <input type="text" id="url" placeholder="enter url here"><button onclick="create()">✓</button><button onclick="toggleSettings()">⚙</button>
         <img class="spinner" id="spinner" src="spinner.apng" width="50" height="50" style="display: none;">
-        <p><strong>I AM NOT RESPONSIBLE FOR ANYTHING YOU DO WITH THIS TOOL.</strong></p>
+        
+        
+        
+        <div class="options" id="options">
+            <p class="smalltext">note: not much will change between these options, i added settings for fun. base64URL is reccomended</p>
+            <button id="base64" onclick="toggle(0)">base64</button>
+            <button id="base64URL"onclick="toggle(1)">base64URL</button>
+        </div>
+        <p>made with ❤️ by xenon | UI design inspired by <a href="https://cobalt.tools">cobalt</a></p>
+        <footer><p class="warning"><strong>I AM NOT RESPONSIBLE FOR ANYTHING YOU DO WITH THIS TOOL.</strong></p></footer>
         
         
     </body>
